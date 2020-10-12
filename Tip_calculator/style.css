@@ -1,0 +1,78 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: fantasy;
+    background: rgb(238, 194, 48);
+    background: linear-gradient(to top,rgb(236, 192, 48), rgb(227, 104, 79));
+}
+#container {
+    height:525px;
+    width: 360px;
+    margin: 100px auto;
+    background: linear-gradient(45deg, #3ea8d1,#9cd9f1 ) ;
+    border-radius: 20px;
+}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 55px;
+    font-size: 28px;
+    font-weight: normal;
+}
+#line { 
+    margin: 10px;
+}
+p {
+    padding-left: 20px;
+}
+form input[type="text"] {
+    width: 100px;
+}
+input {
+    padding-left: 15px;
+}
+#billamt {
+    font-size: 14px;
+    width: 30%;
+    padding: 3px;
+}
+#peopleamt {
+    font-size: 14px;
+    width:35%;
+    padding: 4px;
+    margin-left: 30px;
+}
+#serviceQual {
+    font-size: 15px;
+    margin-left: 30px;
+}
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display:block;
+    margin: 25px auto;
+    height: 35px;
+    width: 150px;
+    font-size: 17px;
+    color: black;
+    background: rgb(255, 125, 99);
+    border-radius: 5px;
+}
+button:hover {
+    background: rgba(143, 35, 35, 0.527);
+    border-bottom-color:black;
+}
+#totalTip {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+#totalTip:before {
+    content: "Tip amount:";
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+}
