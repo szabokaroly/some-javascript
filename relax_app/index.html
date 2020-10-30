@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relaxation music</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-video">
+            <video loop>
+                <source src="./videos/beach.mp4" type="video/mp4" />
+            </video>
+        </div>
+         <div class="time-select">
+             <button data-time="120">2 Mins</button>
+             <button data-time="300">5 Mins</button>
+             <button data-time="600">10 Mins</button>
+         </div>
+         <div class="play-button">
+             <audio loop class="song">
+                <source src="./sounds/beach.mp3" />
+             </audio>
+             <img src="pics/play.svg" alt="play_button" class="play">
+             <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                    </svg>
+            <h3 class="time-display">0:00</h3>
+         </div>
+         <div class="sound-list">
+             <div class="first">
+                <button id="beach" data-sound="./sounds/beach.mp3" data-video="./videos/beach.mp4">
+                    <img src="./pics/beach.svg" alt="beach" />
+                </button>
+                <button id="rain" data-sound="./sounds/rain.mp3" data-video="./videos/rain.mp4">
+                    <img src="./pics/rain.svg" alt="rain" />
+                </button>
+                <button id="forest" data-sound="./sounds/forest.mp3" data-video="./videos/forest.mp4">
+                    <img src="./pics/forest.svg" alt="forest" />
+                </button>
+            </div>
+            <div class="second">
+                <button id="jungle" data-sound="./sounds/jungle.mp3" data-video="./videos/jungle.mp4">
+                    <img src="pics/jungle.svg" alt="jungle" />
+                </button>
+                <button id="wind" data-sound="./sounds/wind.mp3" data-video="./videos/wind.mp4">
+                    <img src="./pics/wind.svg" alt="wind" />
+                </button>
+                <button id="swamp" data-sound="./sounds/swamp.mp3" data-video="./videos/swamp.mp4">
+                    <img src="./pics/swamp.svg" alt="swamp" />
+                </button>
+            </div>
+         </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

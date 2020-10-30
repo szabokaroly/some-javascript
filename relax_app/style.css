@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.time-select, .play-button, .sound-list {
+    height: 80%;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.play-button {
+    position: relative;
+}
+.play-button svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+.time-display {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
+}
+video {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: -10;
+}
+.time-select button, .sound-list button{
+    color:white;
+    width: 30%;
+    height: 10%;
+    background: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease; 
+}
+.time-select button:hover {
+    color: black;
+    background: white;
+}
+.sound-list button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 30px;
+}
+#rain {
+    background: rgb(33, 115, 148);
+}
+#beach {
+    background: rgb(233, 178, 75);
+}
+#forest {
+    background: rgb(113, 219, 113);
+}
+#jungle {
+    background: rgb(5, 85, 5);
+}
+#wind {
+    background:rgb(117, 231, 231);
+}
+#swamp {
+    background: rgb(83, 53, 53);
+}
+.sound-list button img {
+    height: 100%;
+}
+
